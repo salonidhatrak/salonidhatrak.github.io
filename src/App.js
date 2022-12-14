@@ -1,13 +1,69 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
+import { useContext, useRef } from 'react';
+import { AppContext } from './Context/AppContext';
+import Profile from './Components/Profile';
+import {  Box, Button } from '@chakra-ui/react';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import Navbar from './Components/Navbar';
+import SocialProfileSimple from './Components/AboutCard';
 
 function App() {
+  const ProfileRef = useRef(null);
+  const AboutRef = useRef(null);
+  const SkillsRef = useRef(null);
+  const ProjectRef = useRef(null);
+  const ContactRef = useRef(null)
+  const {Theme} = useContext(AppContext);
+
+  const light = {
+    backgroundColor : '#E9D8FD',
+    color : 'black'
+  }
+
+  // const dark = {
+  //   backgroundColor : 'black',
+  //   color : 'white'
+  // }
+
+  const HandleScrollTo = (ref) =>{
+    window.scrollTo({
+      top : ref.current.offsetTop,
+      behavior : 'smooth'
+    })
+  };
   return (
-    <div className="App">
-     <h1>Navbar</h1>
-     <Navbar/>
-    </div>
+    <Box className="App" style={light }>
+      <Navbar 
+      ProfileRef={( ) =>HandleScrollTo(ProfileRef)} 
+      AboutRef={( )=> HandleScrollTo(AboutRef)} 
+      SkillsRef={( ) => HandleScrollTo(SkillsRef)}
+      ProjectsRef={( ) => HandleScrollTo(ProjectRef)}
+      ContactRef={( ) => HandleScrollTo(ContactRef)}
+      />    
+
+     <Box ref={ProfileRef}>
+      <Profile/>
+     </Box>
+
+     <Box mt={{base : '7%', md: '7%'}} ref={AboutRef}>
+
+      <SocialProfileSimple/>
+     </Box>
+
+     <Box mt={{base : '10%', md : '7%', lg : '5%' }} ref={SkillsRef}>
+      <Skills/>
+     </Box>
+
+     <Box mt={{base : '10%', md : '7%', lg : '5%' }} ref={ProjectRef}>
+      <Projects/>
+     </Box>
+
+     <Box mt={{base : '7%', md : '7%', lg : '5%' }} ref={ContactRef}>
+      <Contact/>
+     </Box>
+    </Box>
   );
 }
 
