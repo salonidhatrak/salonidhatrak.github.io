@@ -7,24 +7,24 @@ import {
   Stack,
   Text,
   Image,
+  Link,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
-import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { AppContext } from '../Context/AppContext';
 
 export default function Navbar({ProfileRef,AboutRef,SkillsRef,ProjectsRef,ContactRef}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {Theme,ToggleTheme} = useContext(AppContext)
 
+  const handleDownload = ( ) =>{
+    return window.open('https://drive.google.com/file/d/1xo7qmLhycmLEtqQqXnpGUykDH-MhXwGq/view')
+}
+
   const light = {
     backgroundColor : 'white',
     color : 'black'
   }
 
-  // const dark = {
-  //   backgroundColor : 'black',
-  //   color : 'white'
-  // }
   return (
     <>
       <Box px={4} style={ light} className='ChackraNavBar' shadow='lg'>
@@ -38,8 +38,7 @@ export default function Navbar({ProfileRef,AboutRef,SkillsRef,ProjectsRef,Contac
           />
           <Flex justifyContent={'space-between'} alignItems='center' w='90%' m={'auto'} color='#RGBA(0, 0, 0, 0.64)'>
             <Box p='5px'>
-                {/* { Theme === 'light' ? <Image  width={{base : '30px', md : '40px'}} src="https://logodix.com/logo/2067253.png"/> : 
-                <Image width={{base : '40px', md : '55px'}}  src="https://i.pinimg.com/originals/00/f7/8e/00f78e1fcdaecabd16c18818e7dcbfff.jpg"/>} */}
+             
             </Box>
             <Flex as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }} gap='10px' w={{base : '', md : '60%', lg : '40%'}} justifyContent='space-between' alignItems='center' color='#9f5afd' fontWeight='650'>
               <Text onClick={ProfileRef} cursor='pointer'>Home</Text>
@@ -47,11 +46,11 @@ export default function Navbar({ProfileRef,AboutRef,SkillsRef,ProjectsRef,Contac
               <Text onClick={SkillsRef} cursor='pointer'>Skills</Text>
               <Text onClick={ProjectsRef} cursor='pointer'>Project</Text>
               <Text onClick={ContactRef} cursor='pointer'>Contact</Text>
-              <a href="https://drive.google.com/file/d/1xo7qmLhycmLEtqQqXnpGUykDH-MhXwGq/view?usp=sharing" target='_blank'><Text>Resume</Text> </a>
+              <Text as={Link} _hover={{textDecoration : 'none'}} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text> 
             </Flex>
           </Flex>
             <Box width='5%' justifyContent={'center'} display='flex'>
-            {/* <Text onClick={ToggleTheme} cursor='pointer'>{ Theme ='light' ? <BsFillMoonFill/> : <BsFillSunFill/>}</Text> */}
+            
             </Box>
         </Flex> 
         {isOpen ? (
@@ -62,7 +61,7 @@ export default function Navbar({ProfileRef,AboutRef,SkillsRef,ProjectsRef,Contac
               <Text onClick={SkillsRef} cursor='pointer'>Skills</Text>
               <Text onClick={ProjectsRef} cursor='pointer'>Project</Text>
               <Text onClick={ContactRef} cursor='pointer'>Contact</Text>
-              <a href="https://drive.google.com/file/d/1s6XzcoGAECjaWVGfMDdHro2ghFgweE-u/view?usp=sharing" target='_blank'><Text cursor='pointer'>Resume</Text></a>
+              <a as={Link} _hover={{textDecoration : 'none'}} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'><Text cursor='pointer'>Resume</Text></a>
             </Stack>
           </Box>
         ) : null}

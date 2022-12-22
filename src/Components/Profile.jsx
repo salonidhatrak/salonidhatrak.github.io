@@ -1,6 +1,9 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 
 export default function Profile ( ){
+    const handleDownload = ( ) =>{
+        return window.open('https://drive.google.com/file/d/1xo7qmLhycmLEtqQqXnpGUykDH-MhXwGq/view')
+    }
     return(
         <>
         <Box height={{base :'50px', md : '80px'}}></Box>
@@ -16,7 +19,7 @@ export default function Profile ( ){
                 <Text color='#RGBA(128,128,128)'> <b>Myself</b> <b style={{color:'#9f5afd'}}>Saloni Dhatrak</b></Text>
                 </Flex>
                 <Text color='#RGBA(0, 0, 0, 0.64)   '><b>Full Stack Developer</b></Text>
-               <a href="https://drive.google.com/file/d/1xo7qmLhycmLEtqQqXnpGUykDH-MhXwGq/view?usp=sharing" target='_blank'><Button size={{base : 'sm', md : 'md' ,lg :'lg'}}mt={{base : '10px', md :'0'}} colorScheme='purple'>Resume</Button></a>
+                <Text as={Link} _hover={{textDecoration : 'none'}} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'><Button size={{base : 'sm', md : 'md' ,lg :'lg'}}mt={{base : '10px', md :'0'}} colorScheme='purple'>Resume</Button> </Text>
             </Box>
 
             <Box>
