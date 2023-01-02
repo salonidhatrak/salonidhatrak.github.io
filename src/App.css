@@ -1,16 +1,16 @@
-.NavMainFlex{
+.NavMainFlex {
   position: fixed;
   width: 100%;
   z-index: 99;
 }
 
-.ChackraNavBar{
+.ChackraNavBar {
   position: fixed;
   width: 100%;
   z-index: 99;
 }
 
-.cardImg{
+.cardImg {
   display: inline-block;
   position: relative;
 }
@@ -23,7 +23,7 @@
   z-index: 99;
 }
 
-.cardImg:hover .imgTop{
+.cardImg:hover .imgTop {
   display: inline;
   cursor: pointer;
   z-index: inherit;
@@ -34,24 +34,27 @@
   font-weight: 600;
 }
 
-.DayNightButton{
+.DayNightButton {
   cursor: pointer;
 }
 
-  /* Scroll Bar */
-  ::-webkit-scrollbar {
-    width: 16px;
-    height: 0px;
-    border: 1px solid red;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    width: 50px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #474d48;
-    border-radius: 5px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #44a749;
-  }
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 0px;
+  border: 1px solid red;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474d48;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #44a749;
+}

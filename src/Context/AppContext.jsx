@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { createContext } from "react";
 
-export const AppContext = createContext( );
+export const AppContext = createContext();
 
-export default function AppContextProvider ({children}){
-    const [Theme,SetTheme] = useState('light');
+export default function AppContextProvider({ children }) {
+    const [Theme, SetTheme] = useState('light');
 
-    const ToggleTheme = ( ) =>{
+    const ToggleTheme = () => {
         SetTheme(Theme === 'light' ? 'light' : 'light')
     }
-        return (
+    return (
         <>
-        <AppContext.Provider value={{Theme,SetTheme,ToggleTheme}}>
-            {children}
-        </AppContext.Provider>
+            <AppContext.Provider value={{ Theme, SetTheme, ToggleTheme }}>
+                {children}
+            </AppContext.Provider>
         </>
     )
 } 
