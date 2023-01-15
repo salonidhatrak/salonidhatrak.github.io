@@ -9,7 +9,7 @@ export default function Projects() {
 
                 <Box m='auto'>
                     <Text fontSize={{ base: '14px', md: '18px', lg: '22px' }} fontWeight='600'>Shooping Paradice.com</Text>
-                    <Text fontSize={{ base: '13px', md: '14px', lg: '16px' }} mt={{ base: '5px', md: '10px', lg: '12px' }} lineHeight={{ base: '20px', md: '25px', lg: '30px' }}>ShoppingParadise is an E-Commerce Indian based web application which sells products related to Makeup, Skin Care, Hair, Mom & Baby Care, Fragrance, Appliances and much more.
+                    <Text fontSize={{ base: '13px', md: '14px', lg: '16px' }} mt={{ base: '5px', md: '10px', lg: '12px' }} lineHeight={{ base: '20px', md: '25px', lg: '30px' }}>Shopping Paradise is an E-Commerce Indian based web application which sells products related to Makeup, Skin Care, Hair, Mom & Baby Care, Fragrance, Appliances and much more.
                     </Text>
                     <Text fontSize={{ base: '12px', md: '14px', lg: '16px' }} mt={{ base: '5px', md: '10px', lg: '12px' }} >A Colaborative project built by a team of 4 members executed in 4 Days</Text>
                     <Text fontSize={{ base: '14px', md: '18px', lg: '22px' }} mt={{ base: '5px', md: '10px', lg: '12px' }} fontWeight='600'>Tech Stack</Text>

@@ -13,7 +13,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleDownload = () => {
-    return window.open('https://drive.google.com/file/d/1xo7qmLhycmLEtqQqXnpGUykDH-MhXwGq/view')
+    return window.open('https://drive.google.com/file/d/1G7V74P6bZ3VYUyk7W10QRLk8ikD3jh7z/view?usp=sharing')
   }
 
   const light = {
@@ -42,7 +42,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
               <Text onClick={SkillsRef} cursor='pointer'>Skills</Text>
               <Text onClick={ProjectsRef} cursor='pointer'>Project</Text>
               <Text onClick={ContactRef} cursor='pointer'>Contact</Text>
-              <Text as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
+              <Text as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/saloni_resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
             </Flex>
           </Flex>
           <Box width='5%' justifyContent={'center'} display='flex'>
