@@ -42,7 +42,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
               <Text onClick={SkillsRef} cursor='pointer'>Skills</Text>
               <Text onClick={ProjectsRef} cursor='pointer'>Project</Text>
               <Text onClick={ContactRef} cursor='pointer'>Contact</Text>
-              <Text id="resume-link-1" as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
+              <Text id="resume-button-1" as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
             </Flex>
           </Flex>
           <Box width='5%' justifyContent={'center'} display='flex'>
