@@ -18,7 +18,7 @@ export default function SocialProfileSimple() {
   return (
     <>
       <Text color='#9f5afd' fontSize={{ base: '22px', md: '22px', lg: '40px' }} fontWeight={{ base: '600', md: '700' }} textAlign='center'>About Me</Text>
-      <Center style={light}>
+      <Center style={light} id="about">
         <Box style={light}
           maxW={{ base: '400px', md: '500px', lg: '550px' }}
           w={'full'}

@@ -7,7 +7,7 @@ export default function Profile() {
     return (
         <>
             <Box height={{ base: '50px', md: '80px' }}></Box>
-            <Flex w={{ base: '100%', md: '80%' }} m='auto' alignItems='center' justifyContent={{ base: 'center', md: 'space-around' }} flexDirection={{ base: 'column-reverse', lg: 'row' }} rowGap={{ base: '10px', md: '10px' }} mt={{ base: '20px', md: '10px', lg: '40px' }} >
+            <Flex id="home" w={{ base: '100%', md: '80%' }} m='auto' alignItems='center' justifyContent={{ base: 'center', md: 'space-around' }} flexDirection={{ base: 'column-reverse', lg: 'row' }} rowGap={{ base: '10px', md: '10px' }} mt={{ base: '20px', md: '10px', lg: '40px' }} >
                 <Box fontSize={{ base: '18px', md: '35px', lg: '55px' }} width={{ base: '90%', md: '100%', lg: '45%' }} m={{ base: 'auto', lg: '0' }} fontWeight='600' textAlign={{ base: 'center', lg: 'left' }} lineHeight={{ base: '28px', md: '50px', lg: '80px' }}>
                     <Flex justifyContent='center' gap='5px' direction={{ base: 'row', lg: 'column' }}>
 

@@ -7,8 +7,8 @@ import CopyRight from "./CopyRight";
 export default function Contact() {
     return (
         <>
-            <Text textAlign='center' color='#9f5afd' fontSize={{ base: '20px', md: '22px', lg: '40px' }} fontWeight={{ base: '600', md: '700' }}>Contact</Text>
-            <Box pb={{ base: '20px', md: '30px' }}>
+            <Text id="contact" textAlign='center' color='#9f5afd' fontSize={{ base: '20px', md: '22px', lg: '40px' }} fontWeight={{ base: '600', md: '700' }}>Contact</Text>
+            <Box id="contact" pb={{ base: '20px', md: '30px' }}>
                 <Flex w={{ base: '60%', md: '35%', lg: '25%' }} m='auto' justifyContent='space-around' fontSize={{ base: '22px', md: '26px', lg: '30px' }} mt='20px'>
                     <Box>
                         <a href="https://www.linkedin.com/in/saloni-dhatrak-34201b229/" target='_blank' rel="noreferrer"> <Text><BsLinkedin /></Text></a>
@@ -28,7 +28,7 @@ export default function Contact() {
                 </Flex>
             </Box>
 
-            <Box width={{ base: '50%', md: '35%', lg: '25%' }} m='auto' textAlign='center' paddingBottom={{ base: '30px', lg: '50px' }}>
+            <Box id="contact" width={{ base: '50%', md: '35%', lg: '25%' }} m='auto' textAlign='center' paddingBottom={{ base: '30px', lg: '50px' }}>
                 <CopyRight />
             </Box>
         </>
