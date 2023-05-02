@@ -23,7 +23,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
 
   return (
     <>
-      <Box px={4} style={light} className='ChackraNavBar' shadow='lg'>
+      <Box px={4} style={light} className='ChackraNavBar' shadow='lg'  id="nav-menu">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton style={light}
             size='lg'
