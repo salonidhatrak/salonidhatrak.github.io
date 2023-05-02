@@ -38,7 +38,7 @@ export default function SocialProfileSimple() {
 
 
 
-          <Stack mt={1} direction={'row'} spacing={4} >
+          <Stack mt={1} direction={'row'} spacing={4}   id="resume-link-2">
             <a href="https://www.linkedin.com/in/saloni-dhatrak-34201b229/" target='_blank' style={{ width: '90%', margin: 'auto' }} rel="noreferrer"><LinkedinButton /></a>
           </Stack>
         </Box>
