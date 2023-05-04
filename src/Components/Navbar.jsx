@@ -23,7 +23,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
 
   return (
     <>
-      <Box px={4} style={light} className='ChackraNavBar' shadow='lg'  id="nav-menu">
+      <Box px={4} style={light} className='ChackraNavBar' shadow='lg' id="nav-menu">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton style={light}
             size='lg'
@@ -37,12 +37,12 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
 
             </Box>
             <Flex as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }} gap='10px' w={{ base: '', md: '60%', lg: '40%' }} justifyContent='space-between' alignItems='center' color='#9f5afd' fontWeight='650'>
-              <Text onClick={ProfileRef} cursor='pointer'>Home</Text>
-              <Text onClick={AboutRef} cursor='pointer'>About</Text>
-              <Text onClick={SkillsRef} cursor='pointer'>Skills</Text>
-              <Text onClick={ProjectsRef} cursor='pointer'>Project</Text>
-              <Text onClick={ContactRef} cursor='pointer'>Contact</Text>
-              <Text id="resume-button-1" as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
+              <Text className="nav-link home" onClick={ProfileRef} cursor='pointer'>Home</Text>
+              <Text className="nav-link about" onClick={AboutRef} cursor='pointer'>About</Text>
+              <Text className="nav-link skills" onClick={SkillsRef} cursor='pointer'>Skills</Text>
+              <Text className="nav-link projects" onClick={ProjectsRef} cursor='pointer'>Project</Text>
+              <Text className="nav-link contact" onClick={ContactRef} cursor='pointer'>Contact</Text>
+              <Text id="resume-button-1" className="nav-link resume" as={Link} _hover={{ textDecoration: 'none' }} download={true} href='/Saloni_Dhatrak_Resume.pdf' onClick={handleDownload} target='_blank'>Resume</Text>
             </Flex>
           </Flex>
           <Box width='5%' justifyContent={'center'} display='flex'>

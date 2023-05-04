@@ -28,7 +28,7 @@ export default function SocialProfileSimple() {
 
 
 
-          <p className="home-about-body">
+          <p className="home-about-body" id="user-detail-intro">
             I'm  an aspiring and determined <span style={{ color: "#0A81AB", fontStyle: "italic" }}>Full Stack Web Developer</span>, curious to explore different industry-standard tech stacks and environments.
             Skilled in the <span style={{ color: "#0A81AB", fontStyle: "italic" }}>MERN stack</span> and willing to start a career with an organization that provides an opportunity to improve skills and knowledge gained as well as to grow along with the organization’s goal.
             <br />
