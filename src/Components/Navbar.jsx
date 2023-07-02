@@ -13,7 +13,7 @@ export default function Navbar({ ProfileRef, AboutRef, SkillsRef, ProjectsRef, C
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleDownload = () => {
-    return window.open('https://drive.google.com/file/d/1uX_cOPerWzJ10l18ZmjsMUzbQSGCeO0X/view?usp=sharing')
+    return window.open('https://drive.google.com/file/d/1P0xEY9tnCdiamGo8hGqPNyUTpDB3QB3d/view?usp=sharing')
   }
 
   const light = {

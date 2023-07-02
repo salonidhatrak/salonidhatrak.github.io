@@ -2,7 +2,7 @@ import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 
 export default function Profile() {
     const handleDownload = () => {
-        return window.open('https://drive.google.com/file/d/1G7V74P6bZ3VYUyk7W10QRLk8ikD3jh7z/view?usp=sharing')
+        return window.open('https://drive.google.com/file/d/1P0xEY9tnCdiamGo8hGqPNyUTpDB3QB3d/view?usp=sharing')
     }
     return (
         <>
